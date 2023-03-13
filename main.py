@@ -40,4 +40,6 @@ T = nx.minimum_spanning_tree(G)
 nx.draw(T, pos, with_labels=True, node_color='red', edge_color='red')
 nx.draw_networkx_edge_labels(T, pos, edge_labels=nx.get_edge_attributes(T, 'weight'), font_color='red')
 
-plt.show()
+# save the minimum spanning tree as a png file
+
+plt.savefig("minimum_spanning_tree.png")
